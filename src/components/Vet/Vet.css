@@ -1,0 +1,6 @@
+.Vet {
+  width: 100%;
+  display: grid;
+  grid: auto / repeat(3, 1fr);
+  grid-gap: 15px;
+}
