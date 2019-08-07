@@ -1,8 +1,9 @@
 import React from 'react';
 
-const PetList = ({ pets, selectPetAction }) => {
+const PetList = ({ history, pets, selectPetAction }) => {
   const onSelectPet = (pet) => () => {
     selectPetAction(pet);
+    history.push('/pet-data');
   };
 
   return (
