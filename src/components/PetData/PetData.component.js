@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import './PetData.css';
 
 const PetData = ({ pet, editPetAction, selectPetAction }) => {
+  useEffect(() => {
+    console.log(pet);
+
+    return () => {
+      selectPetAction(null);
+    };
+  }, []);
+
   if (!pet) {
     return null;
   }
