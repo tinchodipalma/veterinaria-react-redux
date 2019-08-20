@@ -1,3 +1,3 @@
-import PetForm from './PetForm';
+import PetForm from './PetForm.container';
 
 export default PetForm;

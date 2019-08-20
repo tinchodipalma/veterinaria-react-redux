@@ -4,10 +4,6 @@ import PetForm from '../PetForm';
 import './Vet.css';
 
 const Vet = ({ isEdit, selectedPet, pets, createPetAction }) => {
-  const onPetSubmit = (pet) => {
-    createPetAction(pet);
-  };
-
   const onPetDelete = () => {};
   const onEditCancel = () => {};
 
@@ -17,7 +13,6 @@ const Vet = ({ isEdit, selectedPet, pets, createPetAction }) => {
         <PetForm
           isEdit={isEdit}
           pet={selectedPet}
-          onCreate={onPetSubmit}
           onDelete={onPetDelete}
           onEditCancel={onEditCancel}
         />

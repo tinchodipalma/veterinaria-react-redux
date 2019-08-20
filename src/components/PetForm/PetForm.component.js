@@ -1,7 +1,7 @@
 import React from 'react';
+import Perro from '../../entities/Perro';
 
 import './PetForm.css';
-import Perro from '../../entities/Perro';
 
 class PetForm extends React.Component {
   constructor(props) {

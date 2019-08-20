@@ -1,4 +1,4 @@
-import { CREATE_PET, UPDATE_PET, EDIT_PET, DELETE_PET, SELECT_PET } from '../actions';
+import { CREATE_PET, UPDATE_PET, EDIT_PET, DELETE_PET, SELECT_PET, LOAD_PETS } from '../actions';
 
 export const INITIAL_STATE = {
   isEdit: false,
@@ -8,6 +8,12 @@ export const INITIAL_STATE = {
 
 const VetReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
+    case LOAD_PETS:
+      return {
+        ...state,
+        pets: action.payload,
+      };
+
     case CREATE_PET:
       return {
         ...state,
